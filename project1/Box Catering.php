@@ -9,7 +9,7 @@
                 <div class="col-md-4">
                         <div class="menu-card">
                                 <div class="menu-title">Ayam Goreng</div>
-                                <img src="img/ayam.jpg" alt="Ayam Goreng">
+                                <img src="img/a.jpg" alt="Ayam Goreng">
                                 <div class="menu-item">
                                         <i class="fa-solid fa-check checkmark"></i><span>Nasi</span>
                                 </div>
@@ -37,7 +37,7 @@
                 <div class="col-md-4">
                         <div class="menu-card">
                                 <div class="menu-title">Ayam Bakar</div>
-                                <img src="img/ayam.jpg" alt="Ayam Bakar">
+                                <img src="img/bakar2.jpg" alt="Ayam Bakar">
                                 <div class="menu-item">
                                         <i class="fa-solid fa-check checkmark"></i><span>Nasi</span>
                                 </div>

@@ -9,7 +9,7 @@
         <div class="col-md-4">
             <div class="menu-card">
                 <div class="menu-title">Ayam Goreng</div>
-                <img src="img/ayam.jpg" alt="Ayam Goreng" class="menu-image">
+                <img src="img/a.jpg" alt="Ayam Goreng" class="menu-image">
                 <div class="menu-item">
                     <button class="order-btn">
                         <i class="fab fa-whatsapp whatsapp-icon"></i> Pesan Sekarang
@@ -20,7 +20,7 @@
         <div class="col-md-4">
             <div class="menu-card">
                 <div class="menu-title">Ayam Bakar</div>
-                <img src="img/ayam.jpg" alt="Ayam Bakar" class="menu-image">
+                <img src="img/bakar2.jpg" alt="Ayam Bakar" class="menu-image">
                 <div class="menu-item">
                     <button class="order-btn">
                         <i class="fab fa-whatsapp whatsapp-icon"></i> Pesan Sekarang
