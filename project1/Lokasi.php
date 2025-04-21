@@ -16,7 +16,7 @@
         <!-- Cabang Cijoho -->
         <div class="menu-card1">
     <img src="img/cijoho.png" alt="Kuningan Branch" class="branch-img">
-    <div class="location-tag">Kuningan</div>
+    <div class="location-tag">Lamepayung</div>
 </div>
 
 <div class="menu-card1">

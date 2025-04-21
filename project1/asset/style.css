@@ -64,7 +64,7 @@ body {
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background: yellowgreen;
+    background: #FFFF17;
     transition: all 0.3s ease;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -77,7 +77,7 @@ body {
 }
 
 .nav-link:hover {
-    color: yellowgreen !important;
+    color: #FFFF17 !important;
 }
 
 .navbar-nav .nav-link {
@@ -103,9 +103,23 @@ body {
 .navbar.scrolled .nav-link {
     color: red !important;
 }
-.navbar.scrolled .nav-link:hover {
-    color: yellowgreen !important;
+
+/* Warna hover ketika belum di-scroll */
+.navbar:not(.scrolled) .nav-link:hover {
+    color: #FFFF17 !important;
 }
+.navbar:not(.scrolled) .nav-link::before {
+    background: #FFFF17;
+}
+
+/* Warna hover ketika navbar discroll */
+.navbar.scrolled .nav-link:hover {
+    color: #25D366 !important;
+}
+.navbar.scrolled .nav-link::before {
+    background: #25D366;
+}
+
 .navbar-brand img {
     transition: all 0.4s ease;
 }
@@ -352,7 +366,7 @@ body {
 
 .whatsapp-text {
     font-weight: 600;
-    color: #333;
+    color: #25D366;
     transition: all 0.3s ease;
 }
 
@@ -553,13 +567,13 @@ body {
 }
 
 .info-kantor {
-    border: 2px solid #000000;
+    border: none solid #000000;
     color: #000000;
     padding: 2rem;
     border-radius: 10px;
     font-size: 0.95rem;
     position: relative;
-    box-shadow:0 0 0 8px #ffffff;
+    box-shadow:0 0 8px  8px #0000003e;
     margin: 12px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -576,16 +590,16 @@ body {
     margin-right: 8px;
     color: #000000;
 }
-
+/* 
 .info-kantor img {
     width: 100%;
-    border: 1px solid #000000;
+    border: 4rem solid #000000;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-}
+} */
 
 .service-hours p {
     margin: 1px;
