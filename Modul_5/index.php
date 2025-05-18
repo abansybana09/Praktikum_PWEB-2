@@ -15,6 +15,8 @@
        if ($menu == "input_buku") { include "input_buku.php"; }
        elseif ($menu == "tampil_buku") { include "tampil_buku.php"; }
        elseif ($menu == "simpan_buku") { include "simpan_buku.php"; }
+       elseif ($menu == "edit_buku") { include "input_buku.php"; }
+       elseif ($menu == "hapus_buku") { include "tampil_buku.php"; }
     }
     ?>
 </body>
