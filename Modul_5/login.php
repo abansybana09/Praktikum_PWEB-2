@@ -1,38 +1,38 @@
 <?php
 session_start();
 
-// Include koneksi database
-require_once 'koneksi.php'; // Simpan script koneksi Anda dalam file terpisah
+// Cegah akses login jika sudah login
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+    header("Location: index.php");
+    exit();
+}
 
-// Proses login
+require_once 'koneksi.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = mysqli_real_escape_string($db, $_POST['username']);
     $password = mysqli_real_escape_string($db, $_POST['password']);
-    
-    // Query untuk memeriksa username dan password di tabel aaadmin
+
     $query = "SELECT * FROM aaadmin WHERE username = '$username' AND password = '$password'";
     $result = mysqli_query($db, $query);
-    
+
     if (mysqli_num_rows($result) == 1) {
-        // Login berhasil
         $user = mysqli_fetch_assoc($result);
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $user['username'];
         $_SESSION['nama'] = $user['nama'];
         $_SESSION['level'] = $user['level'];
-        
-        // Redirect ke halaman index.php
-        header("Location: http://localhost/praktikum pweb2/Modul_5/index.php");
+
+        header("Location: index.php");
         exit();
     } else {
-        // Login gagal
         $error = "Username atau password salah!";
     }
 }
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

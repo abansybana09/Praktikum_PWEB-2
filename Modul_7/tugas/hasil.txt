@@ -1,0 +1,2 @@
+Ini adalah contoh data yang ditulis ke dalam file.
+Tanggal sekarang: 2025-05-23 21:33:40
